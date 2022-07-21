@@ -4,21 +4,26 @@ table 50200 "Television Show"
     {
         field(1; Code; Code[20])
         {
+            DataClassification = CustomerContent;
             NotBlank = true;
         }
         field(2; Name; Text[80])
         {
+            DataClassification = CustomerContent;
         }
         field(3; Synopsis; Text[250])
         {
+            DataClassification = CustomerContent;
         }
         field(4; Status; Option)
         {
+            DataClassification = CustomerContent;
             OptionCaption = 'Active,Finished';
             OptionMembers = Active,Finished;
         }
         field(5; "First Aired"; Date)
         {
+            DataClassification = CustomerContent;
             trigger OnValidate()
             begin
                 VerifyDates();
@@ -26,7 +31,7 @@ table 50200 "Television Show"
         }
         field(6; "Last Aired"; Date)
         {
-            DataClassification = ToBeClassified;
+            DataClassification = CustomerContent;
             trigger OnValidate()
             begin
                 VerifyDates();
@@ -34,8 +39,8 @@ table 50200 "Television Show"
         }
         field(7; "Created By"; Code[50])
         {
-            DataClassification = ToBeClassified;
             Editable = false;
+            DataClassification = CustomerContent;
         }
     }
 

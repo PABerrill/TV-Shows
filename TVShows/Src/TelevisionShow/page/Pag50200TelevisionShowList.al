@@ -6,6 +6,7 @@ page 50201 "Television Show List"
     Editable = false;
     CardPageId = "Television Show Card";
     SourceTable = "Television Show";
+    HelpLink = 'https://www.berrill.uk';
 
     layout
     {

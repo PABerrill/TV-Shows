@@ -3,7 +3,7 @@ page 50200 "Television Show Card"
     PageType = Card;
     SourceTable = "Television Show";
     DelayedInsert = true;
-
+    HelpLink = 'https://www.berrill.uk';
     layout
     {
         area(Content)
